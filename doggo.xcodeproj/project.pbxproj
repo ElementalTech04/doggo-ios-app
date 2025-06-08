@@ -16,6 +16,11 @@
 		3781DDD62DF6052100895633 /* doggoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781DDD52DF6052100895633 /* doggoTests.swift */; };
 		3781DDE02DF6052100895633 /* doggoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781DDDF2DF6052100895633 /* doggoUITests.swift */; };
 		3781DDE22DF6052100895633 /* doggoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781DDE12DF6052100895633 /* doggoUITestsLaunchTests.swift */; };
+		3781DDF32DF6154800895633 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781DDF22DF6154800895633 /* MainView.swift */; };
+		3781DDF52DF6156600895633 /* DailyTodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781DDF42DF6156600895633 /* DailyTodoListView.swift */; };
+		3781DDF72DF615B400895633 /* NewTodoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781DDF62DF615B400895633 /* NewTodoItemView.swift */; };
+		3781DDF92DF6160E00895633 /* VetTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781DDF82DF6160E00895633 /* VetTrackerView.swift */; };
+		3781DDFB2DF6167200895633 /* PetDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3781DDFA2DF6167200895633 /* PetDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		3781DDDB2DF6052100895633 /* doggoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = doggoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3781DDDF2DF6052100895633 /* doggoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doggoUITests.swift; sourceTree = "<group>"; };
 		3781DDE12DF6052100895633 /* doggoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doggoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3781DDF22DF6154800895633 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3781DDF42DF6156600895633 /* DailyTodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTodoListView.swift; sourceTree = "<group>"; };
+		3781DDF62DF615B400895633 /* NewTodoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoItemView.swift; sourceTree = "<group>"; };
+		3781DDF82DF6160E00895633 /* VetTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VetTrackerView.swift; sourceTree = "<group>"; };
+		3781DDFA2DF6167200895633 /* PetDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +108,11 @@
 		3781DDBE2DF6051600895633 /* doggo */ = {
 			isa = PBXGroup;
 			children = (
-				3781DDBF2DF6051600895633 /* doggoApp.swift */,
-				3781DDC12DF6051600895633 /* ContentView.swift */,
 				3781DDC32DF6052000895633 /* Assets.xcassets */,
+				3781DDF02DF611AF00895633 /* Models */,
+				3781DDEF2DF6118900895633 /* ViewModels */,
+				3781DDEE2DF6117F00895633 /* Views */,
+				3781DDBF2DF6051600895633 /* doggoApp.swift */,
 				3781DDC82DF6052000895633 /* Persistence.swift */,
 				3781DDCA2DF6052000895633 /* doggo.xcdatamodeld */,
 				3781DDC52DF6052000895633 /* Preview Content */,
@@ -131,6 +143,33 @@
 				3781DDE12DF6052100895633 /* doggoUITestsLaunchTests.swift */,
 			);
 			path = doggoUITests;
+			sourceTree = "<group>";
+		};
+		3781DDEE2DF6117F00895633 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3781DDC12DF6051600895633 /* ContentView.swift */,
+				3781DDF22DF6154800895633 /* MainView.swift */,
+				3781DDF62DF615B400895633 /* NewTodoItemView.swift */,
+				3781DDF42DF6156600895633 /* DailyTodoListView.swift */,
+				3781DDF82DF6160E00895633 /* VetTrackerView.swift */,
+				3781DDFA2DF6167200895633 /* PetDetailsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3781DDEF2DF6118900895633 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3781DDF02DF611AF00895633 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +302,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3781DDF52DF6156600895633 /* DailyTodoListView.swift in Sources */,
 				3781DDC92DF6052000895633 /* Persistence.swift in Sources */,
 				3781DDC22DF6051600895633 /* ContentView.swift in Sources */,
 				3781DDCC2DF6052000895633 /* doggo.xcdatamodeld in Sources */,
+				3781DDF32DF6154800895633 /* MainView.swift in Sources */,
+				3781DDF92DF6160E00895633 /* VetTrackerView.swift in Sources */,
+				3781DDF72DF615B400895633 /* NewTodoItemView.swift in Sources */,
+				3781DDFB2DF6167200895633 /* PetDetailsView.swift in Sources */,
 				3781DDC02DF6051600895633 /* doggoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,11 +471,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"doggo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Doggo App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,11 +501,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"doggo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Doggo App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
