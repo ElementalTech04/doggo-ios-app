@@ -9,7 +9,15 @@ import SwiftUI
 
 struct DailyTodoListView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 0)
+                    .foregroundColor(Color.mint).rotationEffect(Angle(degrees: 20))
+                Text("Daily Todo List").font(.system(size: 50)).foregroundColor(Color.white).bold()
+            }
+            .frame(width: UIScreen.main.bounds.width*3, height: 300)
+            .offset(y: -300)
+        }
     }
 }
 
